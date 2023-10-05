@@ -1,0 +1,42 @@
+<div class="w-100 h-100 bg-warning">
+    <h3>Please search a city</h3>
+</div>
+<div style="background-image: url('/assets/images/overcast_clouds.jpg'); width: 100%; height: 100vh; background-size: cover;"
+     class="py-5"
+     *ngIf="currentData.weather[0].description=='overcast clouds'">
+    <div class="ml-3">
+        <h2>Weather in {{ currentData.name }}</h2>
+        <p>Temperature: {{ currentData.main.temp }}°C</p>
+        <p>Weather: {{ currentData.weather[0].description }}</p>
+     </div>
+</div>
+
+<div style="background-image: url('/assets/images/broken_clouds.jpg'); width: 100%; height: 100vh; background-size: cover;"
+     class="py-5"
+     *ngIf="currentData.weather[0].description=='broken clouds'">
+    <div class="ml-3">
+        <h2>Weather in {{ currentData.name }}</h2>
+        <p>Temperature: {{ currentData.main.temp }}°C</p>
+        <p>Weather: {{ currentData.weather[0].description }}</p>
+     </div>
+</div>
+
+<div style="background-image: url('/assets/images/clear_sky.jpg'); width: 100%; height: 100vh; background-size: cover;"
+     class="py-5"
+     *ngIf="currentData.weather[0].description=='clear sky'">
+    <div class="ml-3">
+        <h2>Weather in {{ currentData.name }}</h2>
+        <p>Temperature: {{ currentData.main.temp }}°C</p>
+        <p>Weather: {{ currentData.weather[0].description }}</p>
+     </div>
+</div>
+
+<div style="background-image: url('/assets/images/few_clouds.jpg'); width: 100%; height: 100vh; background-size: cover;"
+     class="py-5"
+     *ngIf="currentData.weather[0].description=='few clouds'">
+    <div class="ml-3">
+        <h2>Weather in {{ currentData.name }}</h2>
+        <p>Temperature: {{ currentData.main.temp }}°C</p>
+        <p>Weather: {{ currentData.weather[0].description }}</p>
+     </div>
+</div>

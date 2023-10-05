@@ -1,0 +1,6 @@
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" #searchcity>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="submitForm(searchcity.value)">Search</button>
+</form>
+
+<app-weather [currentData]="currentData"></app-weather>
